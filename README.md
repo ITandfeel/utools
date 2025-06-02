@@ -4,6 +4,8 @@
 
 ---
 
+![UTools by itandfeel](./utools.png)
+
 ## 🚀 Key Features
 
 - 🔤 **Add Recommended Prefixes**  
@@ -51,10 +53,12 @@ If you find this plugin useful and want to support further development, you can 
 
 ---
 
-## 🔗 Stay Connected
-
-- 🌐 [Itandfeel Website](https://www.itandfeel.com)
-- 🛠️ [More Tools on Patreon](https://www.patreon.com/itandfeel)
-- 🧑‍💼 [LinkedIn](https://www.linkedin.com/in/develop3r)
+[![Support on Patreon](https://img.shields.io/badge/Support%20on-Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.patreon.com/itandfeel)
+[![Steam Developer](https://img.shields.io/badge/Follow%20us%20on-Steam-171a21?style=for-the-badge&logo=steam&logoColor=white)](https://store.steampowered.com/developer/itandfeel)
+[![Itch.io](https://img.shields.io/badge/Games%20on-Itch.io-fa5c5c?style=for-the-badge&logo=itch.io&logoColor=white)](https://itandfeel.itch.io/)
+[![YouTube](https://img.shields.io/badge/Follow%20us%20on-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@itandfeel)
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/develop3r)
+[![ArtStation](https://img.shields.io/badge/Portfolio-ArtStation-13AFF0?style=for-the-badge&logo=artstation&logoColor=white)](https://itandfeel.artstation.com/)
+[![Made with ❤️ by itandfeel](https://img.shields.io/badge/Made%20with%20%E2%9D%A4%EF%B8%8F-by%20itandfeel-ff69b4?style=for-the-badge)](https://www.itandfeel.com)
 
 ---
