@@ -23,6 +23,7 @@
 
 - ✔️ Unreal Engine **5.3**
 - ✔️ Unreal Engine **5.4**
+- ✔️ Unreal Engine **5.5**
 
 > UTools is built using native editor utility.
 
