@@ -16,6 +16,16 @@
 #include "Sound/SoundCue.h"
 #include "NiagaraSystem.h"
 #include "NiagaraEmitter.h"
+#include "Rig/IKRigDefinition.h"
+#include "Retargeter/IKRetargeter.h"
+#include "ControlRig.h"
+#include "FoliageType_Actor.h"
+#include "FoliageType_InstancedStaticMesh.h"
+#include "GeometryCollection/GeometryCollectionObject.h"
+#include "PhysicsEngine/PhysicsAsset.h"
+#include "InputMappingContext.h"
+#include "Sound/SoundAttenuation.h"
+#include "MetasoundSource.h"
 
 #include "QuickAssetAction.generated.h"
 
@@ -67,11 +77,17 @@ private:
 		// Meshes
 		{UStaticMesh::StaticClass(), TEXT("SM_")},
 		{USkeletalMesh::StaticClass(), TEXT("SKM_")},
-		{USkeletalMeshComponent::StaticClass(), TEXT("SK_")},
+
+		// Skeleton
+		{USkeleton::StaticClass(), TEXT("SK_")},
+
+		// PhysicalAsset
+		{UPhysicsAsset::StaticClass(), TEXT("PA_")},
 
 		// Animations
 		{UAnimSequence::StaticClass(), TEXT("AS_")},
 		{UAnimBlueprint::StaticClass(), TEXT("ABP_")},
+		{UAnimMontage::StaticClass(), TEXT("AM_")},
 
 		// Particle and Effects
 		{UParticleSystem::StaticClass(), TEXT("PS_")},
@@ -87,7 +103,31 @@ private:
 		// Data
 		{UDataTable::StaticClass(), TEXT("DT_")},
 		{UUserDefinedStruct::StaticClass(), TEXT("UDS_")},
-		{UEnum::StaticClass(), TEXT("E_")}
+		{UEnum::StaticClass(), TEXT("E_")},
+
+		// IK Rig
+		{UIKRigDefinition::StaticClass(), TEXT("IK_")},
+
+		// IK Retargeter
+		{UIKRetargeter::StaticClass(), TEXT("RTG_")},
+
+		// Control Rig
+		{UControlRig::StaticClass(), TEXT("CR_")},
+
+		// Geometry Collection
+		{UGeometryCollection::StaticClass(), TEXT("GC_")},
+
+		// Input
+		{UInputMappingContext::StaticClass(), TEXT("IMC_")},
+		{UInputAction::StaticClass(), TEXT("IA_")},
+
+		// Sound
+		{USoundAttenuation::StaticClass(), TEXT("SA_")},
+		{UMetaSoundSource::StaticClass(), TEXT("MS_")},
+
+		// Foliage		
+		{UFoliageType_Actor::StaticClass(), TEXT("AF_")},
+		{UFoliageType_InstancedStaticMesh::StaticClass(), TEXT("SMF_")}
 	};
 
 	static void FixUpRedirects();

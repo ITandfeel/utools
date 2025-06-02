@@ -59,7 +59,6 @@ void UQuickAssetAction::AddPrefix()
 		if (nullptr == Asset) { continue; }
 
 		const FString* PrefixFound = PrefixMap.Find(Asset->GetClass());
-
 		if (nullptr == PrefixFound || PrefixFound->IsEmpty())
 		{
 			Print(FString::Printf(TEXT("No prefix found for %s"), *Asset->GetClass()->GetName()), FColor::Red);
@@ -135,7 +134,7 @@ void UQuickAssetAction::FixUpRedirects()
 	Filter.bRecursivePaths = true;
 	Filter.PackagePaths.Emplace(TEXT("/Game"));
 	Filter.ClassPaths.Emplace(UObjectRedirector::StaticClass()->GetFName());
-	
+
 	TArray<FAssetData> OutRedirectors;
 	AssetRegistryModule.Get().GetAssets(Filter, OutRedirectors);
 
